@@ -17,7 +17,7 @@ const sortArr = arr => {
     if(arr[i] % 2 != 0) {
       let x = arr[i];
       let j = i;
-      while((j > 0 && arr[j + 1] >= x) || (j > 0 && arr[j + 1] % 2 === 0)) {
+      while(j > 0 && arr[j + 1] >= x) {
         arr[j] = arr[j + 1];
         j++;
       }
